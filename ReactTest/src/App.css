@@ -1,0 +1,90 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:25px;
+    padding-top: 60px;
+}
+.Button{
+    font-weight: bold;
+    background: none;
+    border: rgba(89, 89, 89, 0.15) 1px solid;
+    border-radius: 5px;
+    width: 70px;
+    height: 40px;
+}
+.divik{
+    border: rgba(89, 89, 89, 0.15) 1px solid;
+    border-radius: 5px;
+    width: 375px;
+    height: 255px;
+    padding: 25px;
+}
+.newCheck{
+    margin-left: auto;
+    background-color: rgb(241, 241, 245);
+    width: 55px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    border-radius: 100px;
+}
+.courseandsmth{
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.name{
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 0;
+}
+.location{
+    margin-top: 15px;
+    margin-bottom: 0;
+    color: rgb(128, 128, 128);
+    font-size: 20px;
+}
+.date{
+    margin-top: 0;
+    color: rgb(128, 128, 128);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.jumpingGuy{
+    height: 25px;
+}
+.speakerName{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+li:first-child{
+    color: black;
+}
+.navigace_list{
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 19px;
+    padding-left: 0;
+    margin-left: 20px;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    height: 20px;
+    border-bottom: rgba(89, 89, 89, 0.15) 1px solid;
+}
+.logo{
+    height: 30px;
+}
