@@ -17,6 +17,9 @@ body{
     width: 70px;
     height: 40px;
 }
+.Button:hover{
+    cursor: pointer;
+}
 .divik{
     border: rgba(89, 89, 89, 0.15) 1px solid;
     border-radius: 5px;

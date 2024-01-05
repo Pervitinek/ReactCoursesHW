@@ -58,6 +58,9 @@ export function Card(){
     if(course.isNew){
         izNew = <span className={"newCheck"}>New</span>
     }
+    function onClick(){
+        alert(course.name);
+    }
     return(
             <div className={"divik"} key={index}>
                 <div className={"courseandsmth"}>
@@ -67,7 +70,7 @@ export function Card(){
                 <p className={"name"}>Law 10{index + 1}</p>
                 <p className={"location"}>Location: {course.location}</p>
                 <p className={"date"}>Date: {course.date}</p>
-                <Btn txt={"Enroll"}/>
+                <Btn txt={"Enroll"} onClick={onClick}/>
                 <p className={"speakerName"}><img alt={'logo'} src={jumpingguy} className={"jumpingGuy"}/>{course.speaker}</p>
             </div>
         );
