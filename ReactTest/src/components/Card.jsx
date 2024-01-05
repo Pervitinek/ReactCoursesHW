@@ -1,6 +1,6 @@
 import {Btn} from "./Btn.jsx"
 import jumpingguy from "./jumpingguy.png"
-export function Card(){
+export function Card() {
     const info = [
         {
             "name": "Course 1",
@@ -53,15 +53,17 @@ export function Card(){
         },
     ]
 
-    const arrayDataItems = info.map((course, index) =>{
-    let izNew;
-    if(course.isNew){
-        izNew = <span className={"newCheck"}>New</span>
-    }
-    function onClick(){
-        alert(course.name);
-    }
-    return(
+    const arrayDataItems = info.map((course, index) => {
+        let izNew;
+        if (course.isNew) {
+            izNew = <span className={"newCheck"}>New</span>
+        }
+
+        function onClick() {
+            alert(course.name);
+        }
+
+        return (
             <div className={"divik"} key={index}>
                 <div className={"courseandsmth"}>
                     <span className={"courseName"}>{course.name}</span>
@@ -71,7 +73,8 @@ export function Card(){
                 <p className={"location"}>Location: {course.location}</p>
                 <p className={"date"}>Date: {course.date}</p>
                 <Btn txt={"Enroll"} onClick={onClick}/>
-                <p className={"speakerName"}><img alt={'logo'} src={jumpingguy} className={"jumpingGuy"}/>{course.speaker}</p>
+                <p className={"speakerName"}><img alt={'logo'} src={jumpingguy}
+                                                  className={"jumpingGuy"}/>{course.speaker}</p>
             </div>
         );
     })
